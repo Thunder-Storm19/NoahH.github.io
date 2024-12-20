@@ -113,6 +113,15 @@
       transform: translateY(-5px);
     }
 
+    /* Centered Work Section */
+    #work {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
     /* Contact Form */
     .contact-form {
       display: flex;
@@ -172,25 +181,27 @@
 <body>
   <header>
     <h1>Welcome to [Noah H]'s Portfolio</h1>
-    <p>A showcase of my Work Experience, Education, Skills</p>
+    <p>A showcase of my skills, experience, and work</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
-    <a href="#work">Work Experience</a>
+    <a href="#work">Work</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am [Noah H], a passionate tech enthusiast with web development, logo design, and IT support expertise. I am always eager to learn and create solutions that make an impact.</p>
-    <p><strong>Education:</strong> [Associates Degree - 2023]</p>
+    <p>I am [Noah H], a passionate tech enthusiast with expertise in web development, logo design, and IT support. I am always eager to learn and create solutions that make an impact.</p>
+    <p><strong>Education:</strong> [List your education details here]</p>
   </section>
 
   <section id="work">
     <h2>My Work</h2>
-    <p>[List your previous jobs and projects, including key achievements.]</p>
+    <p>Here are some of the projects I've worked on:</p>
+    <!-- Add your work portfolio items here -->
+    <p>[Add your project descriptions or links]</p>
   </section>
 
   <section id="skills">
@@ -207,7 +218,8 @@
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <form class="contact-form">
+    <!-- Formspree Form -->
+    <form class="contact-form" action="https://formspree.io/f/mkgndkwk" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
